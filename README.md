@@ -27,4 +27,4 @@ The proxy should be included as one of the first middleware in your stack, since
     app.use(express.query());
     ...
 
-In this example, an authenticated GET request to `http://myapp/sync/furniture` would be proxied as a GET to `http://localhost:5984/furniture` with the provided credentials.
+In this example, an authenticated GET request to `http://myapp/sync/furniture/` would be proxied as a GET to `http://localhost:5984/furniture/` with the provided credentials.
