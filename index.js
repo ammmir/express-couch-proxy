@@ -33,7 +33,7 @@ module.exports = function(options, cb) {
     
     cb(req.params.db, req.remote_user, req.remote_pass, function(err, url) {
       if(err)
-        return utils.unauthorized(res, options.realm, 'forbidden');
+        return utils.unauthorized(res, options.realm, err.message);
       
       var remoteHeaders = {};
       for(var header in req.headers) {
