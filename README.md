@@ -1,4 +1,4 @@
-# CouchDB Proxy Middleware for Express
+# CouchDB Reverse Proxy Middleware for Express
 
 express-couch-proxy is an Express middleware that can be used to allow external clients to replicate or otherwise access a CouchDB server and you don't want to expose CouchDB directly to the Internet or want to add some custom authentication or routing logic in front of it.
 

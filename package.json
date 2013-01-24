@@ -1,10 +1,21 @@
 {
   "name": "express-couch-proxy",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "description": "CouchDB reverse proxy middleware for Express.",
+  "homepage": "https://github.com/ammmir/express-couch-proxy",
+  "author": {
+    "name": "Amir Malik",
+    "url": "http://amirmalik.net/"
+  },
   "engines": {
-    "node": "0.8.x",
     "npm": "1.1.x"
   },
   "dependencies" : {
-  }
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ammmir/express-couch-proxy/blob/master/LICENSE"
+    }
+  ]
 }
