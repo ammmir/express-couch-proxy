@@ -61,6 +61,7 @@ module.exports = function(options, cb) {
         // node's HTTP parser has already parsed any chunked encoding
         delete remoteRes.headers['transfer-encoding'];
         
+        remoteRes.headers['content-type'] ? null : (remoteRes.headers['content-type'] = 'application/json');    
         // CouchDB replication fails unless we use a properly-cased header
         remoteRes.headers['Content-Type'] = remoteRes.headers['content-type'];
         delete remoteRes.headers['content-type'];
