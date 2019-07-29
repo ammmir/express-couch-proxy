@@ -18,11 +18,10 @@ module.exports = function(options, cb) {
   app.use(function(req, res, next) {
     var creds = utils.authorization(req.headers['authorization']);
     
-    if(!creds)
-      return utils.unauthorized(res, options.realm);
-    
-    req.remote_user = creds[0];
-    req.remote_pass = creds[1];
+    if(creds){
+      req.remote_user = creds[0];
+      req.remote_pass = creds[1];
+    }
     
     next();
   });
